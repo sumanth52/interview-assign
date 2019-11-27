@@ -11,8 +11,8 @@ import {Location} from '@angular/common';
 export class PostComponent implements OnInit {
   private products: any[];
   private postId: any;
-  private postData: any[];
-  private commentsData: any[];
+  public postData: any[];
+  public commentsData: any[];
   public showComments: boolean = true;
   constructor(private dataService: DataService, private route: ActivatedRoute, private _location: Location) { }
 
