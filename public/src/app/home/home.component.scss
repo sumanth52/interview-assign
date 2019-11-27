@@ -1,0 +1,11 @@
+.card-container{
+  .mat-card{
+    width: 200px;
+    &:not(.highlight-card) {
+      &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 4px 17px rgba(black, 0.35);
+      }
+    }
+  }
+}

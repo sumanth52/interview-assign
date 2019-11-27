@@ -1,0 +1,48 @@
+.post{
+  .space {
+    display: block;
+    height: 100px;
+    border-bottom: 1px solid #eee;
+  }
+  .post-container {
+    p{padding: 10px;}
+    .postTitle{
+      display: inline-block;
+    }
+    .deletePost{
+      float: right;
+      padding: 10px;
+      border: 1px solid #eee;
+      border-radius: 5px;
+    }
+  }
+  .comments {
+    .name{
+      display: inline-block;
+      margin: 10px 0;
+    }
+    .hideComments {
+      float: right;
+      padding: 10px;
+      border: 1px solid #eee;
+      border-radius: 5px;
+    }
+  }
+  .card-container{
+    flex-direction: column;
+    .mat-expansion-panel::ng-deep{
+      background: #fafafa;
+      box-shadow: none;
+      border: none;
+      &:hover{
+        background: #fafafa;
+      }
+      .mat-expansion-panel-body{
+        padding: 0;
+      }
+      .mat-expansion-panel-header{
+        padding-left: 0;
+      }
+    }
+  }
+}
